@@ -30,7 +30,7 @@ nocache('./command/case.js', module => console.log(`${module} is now updated!`))
 const starts = async (haruka = new WAConnection()) => {
     haruka.logger.level = 'warn'
     haruka.version = [2, 2143, 3]
-    haruka.browserDescription = [ 'Haruka-Bot', 'Chrome', '3.0' ]
+    haruka.browserDescription = [ 'RifaiChump', 'Chrome', '3.0' ]
 	CFonts.say('Haruka', {
 		font: 'block',
     	color: ['#ff9c00'],
@@ -103,9 +103,9 @@ const starts = async (haruka = new WAConnection()) => {
 						if (anu.action == 'add' && !num.includes(haruka.user.jid)) {
 							welcome = await getBuffer(`https://api-alphabot.herokuapp.com/api/greetings/welcome2?name=${encodeURI(anu_user)}&member=${encodeURI(mdata.participants.length)}&groupName=${encodeURI(mdata.subject)}&ppuser=${ppmem3}&bgurl=${background}&apikey=Alphabot`)
 							try{
-							await sendButLoc(mdata.id, `Welcome @${num.split('@')[0]} to ${mdata.subject}` + '\n' + lang.welcome(), `Klik untuk daftar`,welcome, [{"buttonId": `.daftar`,"buttonText": {"displayText": "Daftar"},"type": "RESPONSE"}], {contextInfo: { mentionedJid: [num]}})
+							await sendButLoc(mdata.id, `Welcome @${num.split('@')[0]} to ${mdata.subject}` + '\n' + lang.welcome(), `Ingin topup dm ml ama joki? Klik disini`,welcome, [{"buttonId": `.shop`,"buttonText": {"displayText": "Shop"},"type": "RESPONSE"}], {contextInfo: { mentionedJid: [num]}})
 							} catch {
-								await sendButLoc(mdata.id, `Welcome @${num.split('@')[0]} to ${mdata.subject}` + '\n' + lang.welcome(), `Klik untuk daftar`,ppmem2, [{"buttonId": `.daftar`,"buttonText": {"displayText": "Daftar"},"type": "RESPONSE"}], {contextInfo: { mentionedJid: [num]}})
+								await sendButLoc(mdata.id, `Welcome @${num.split('@')[0]} to ${mdata.subject}` + '\n' + lang.welcome(), `Ingin topup dm ml ama joki? Klik disini`,ppmem2, [{"buttonId": `.shop`,"buttonText": {"displayText": "Shop"},"type": "RESPONSE"}], {contextInfo: { mentionedJid: [num]}})
 							}
 						} else if (anu.action == 'remove' && !num.includes(haruka.user.jid)) {
 							goodbye = await getBuffer(`https://api-alphabot.herokuapp.com/api/greetings/goodbye2?name=${encodeURI(anu_user)}&member=${encodeURI(mdata.participants.length)}&groupName=${encodeURI(mdata.subject)}&ppuser=${ppmem3}&bgurl=${background}&apikey=Alphabot`)
