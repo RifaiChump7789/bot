@@ -383,7 +383,7 @@ case 'menu': case 'help':
 				sendButLocation(from, lang.menu(prefix, salam, pushname, sender, time), '© ' + ownername, thumbnail, [{buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},{buttonId: '.infobot', buttonText:{displayText: 'Infobot'}, type: 1},{buttonId: '.shop', buttonText:{displayText: 'Shop'}, type: 1}], {quoted: mek})
 				break
 case 'shop':{
-  qris = await getBuffer(`https://i.ibb.co/74tMCy6/1648467824614.jpg`)
+  qris = await getBuffer(`https://i.ibb.co/2sn93ff/IMG-20220401-WA0098.jpg`)
 	haruka.sendMessage(from, qris, image, {quoted:mek, caption: 'Qris Pembayaran'});
 sendButLocation(from, lang.mzstore(prefix, pushname), '© ' + ownername, mzstore, [{buttonId: '.mllist', buttonText: {displayText: 'Topup ml'}, type: 1},{buttonId: '.jokilist', buttonText:{displayText: 'Jasa joki'}, type: 1},{buttonId: '.roomlist', buttonText:{displayText: 'Room turn'}, type: 1}], {quoted: mek})
                 }
