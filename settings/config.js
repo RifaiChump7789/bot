@@ -12,6 +12,7 @@ global.ownernumber = "6289501564737"
 global.botname = "Rifai-BoT"
 global.thumbnail = fs.readFileSync("./settings/rifai.jpg") //sesuaikan dengan nama foto
 global.background = "https://telegra.ph/file/c50321dd75b720ceaf68f.jpg"
+global.mzstore = fs.readFileSync("./settings/mz.jpg")
 global.lolkey = 'e966d3aac613b61dabd35cc6' //register lolhuman.xyz klo mau apikey
 global.zenzkey = '8423e19c13' //register zenzapi.xyz klo mau apikey
 global.limit = {
