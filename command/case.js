@@ -1,11 +1,3 @@
-/*
-# Haruka - UserBot
-# Copyright (C) 2022 Haruka-Bot Created By ZeeoneOfc
-#
-# This file is a part of < https://github.com/zeeone-ofc/Haruka/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/zeeone-ofc/Haruka/blob/v1/LICENSE/>.
-*/ 
 
 // WhatsApp api
 require('../settings/config.js')
@@ -402,11 +394,9 @@ case 'roomlist':{
     }
     break
 case 'infobot':
-if (!isHaruka) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk dibawah`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 			reply('© By RifaiChump')
 break
 case 'owner':{
-	if (!isHaruka) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk dibawah`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 		const ownerContact = [ownernumber, "", "", "", "", "", "", "", "", "", "" , "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 		let ini_list = []
 		for (let i of ownerContact.map(v => v + '@s.whatsapp.net')) {
